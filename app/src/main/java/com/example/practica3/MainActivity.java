@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btn_bebida(View v){
-        Intent bebida = new Intent(MainActivity.this,MainActivity2.class);
+        Intent bebida = new Intent(MainActivity.this,MainActivity4.class);
         startActivity(bebida);
     }
 

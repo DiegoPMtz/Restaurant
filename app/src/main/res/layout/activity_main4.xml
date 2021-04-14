@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/orange"
-    tools:context=".MainActivity2">
-
+    tools:context=".MainActivity4">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,14 +18,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="125dp"
-            android:text="Platillos"
+            android:text="Bebidas"
             android:textSize="40sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="Contamos con una extensa variedad de platillos altamente mexicanos destinados a satisfacer todo tu paladar gastronomico"
+            android:text="Ofrecemos las mejores bebidas refrescantes para cualquier tipo de persona y en cualquier clima"
             android:textAlignment="center"
             android:textSize="35sp" />
 
@@ -54,4 +53,5 @@
                 />
         </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

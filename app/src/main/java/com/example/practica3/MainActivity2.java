@@ -16,8 +16,7 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     public void btn_regresar(View v){
-        Intent regresar = new Intent(MainActivity2.this,MainActivity.class);
-        startActivity(regresar);
+        finish();
     }
 
     public void btn_ver(View v){
