@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange"
-    tools:context=".MainActivity4">
+    tools:context=".MainActivity5">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -20,16 +19,16 @@
             android:layout_width="150dp"
             android:layout_height="250dp"
             android:layout_marginLeft="40dp"
-            android:src="@drawable/comida1"
+            android:src="@drawable/foto1"
             />
 
 
         <ImageView
             android:id="@+id/imagen2"
-            android:layout_width="160dp"
+            android:layout_width="150dp"
             android:layout_height="250dp"
             android:layout_marginLeft="40dp"
-            android:src="@drawable/comida2"
+            android:src="@drawable/foto2"
             />
 
     </LinearLayout>
@@ -48,7 +47,7 @@
             android:layout_width="150dp"
             android:layout_height="250dp"
             android:layout_marginLeft="40dp"
-            android:src="@drawable/comida3"
+            android:src="@drawable/foto3"
             />
 
         <ImageView
@@ -56,7 +55,7 @@
             android:layout_width="150dp"
             android:layout_height="250dp"
             android:layout_marginLeft="40dp"
-            android:src="@drawable/comida4"
+            android:src="@drawable/foto4"
             />
 
     </LinearLayout>
@@ -128,5 +127,4 @@
             android:text="Regresar"
             android:onClick="btn_regresar"/>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

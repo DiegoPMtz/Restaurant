@@ -7,130 +7,55 @@
     android:background="@color/orange"
     tools:context=".MainActivity3">
 
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="99dp">
-
-        <ImageView
-            android:id="@+id/imagen1"
-            android:layout_width="150dp"
-            android:layout_height="250dp"
-            android:layout_marginLeft="40dp"
-            android:src="@drawable/foto1"
-            />
-
-
-        <ImageView
-            android:id="@+id/imagen2"
-            android:layout_width="150dp"
-            android:layout_height="250dp"
-            android:layout_marginLeft="40dp"
-            android:src="@drawable/foto2"
-            />
-
-    </LinearLayout>
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="250dp"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="99dp">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="91dp">
 
-        <ImageView
-            android:id="@+id/imagen3"
-            android:layout_width="150dp"
-            android:layout_height="250dp"
-            android:layout_marginLeft="40dp"
-            android:src="@drawable/foto3"
-            />
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:text="BEBIDA"
+            android:textSize="40sp" />
 
-        <ImageView
-            android:id="@+id/imagen4"
-            android:layout_width="150dp"
-            android:layout_height="250dp"
-            android:layout_marginLeft="40dp"
-            android:src="@drawable/foto4"
-            />
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/descripcion_bebida"
+            android:textAlignment="center"
+            android:textSize="35sp" />
 
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="200dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:backgroundTint="@color/yellow"
+                android:text="Regresar"
+                android:onClick="btn_regresar"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:backgroundTint="@color/yellow"
+                android:text="Ver Ejemplos"
+                android:onClick="btn_ver"
+                />
+        </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="264dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="200dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:backgroundTint="@color/yellow"
-            android:text="Ver"
-            android:onClick="btn_alimento1"/>
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:backgroundTint="@color/yellow"
-            android:text="Ver" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="264dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="450dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:backgroundTint="@color/yellow"
-            android:text="Ver" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:backgroundTint="@color/yellow"
-            android:text="Ver" />
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:layout_marginTop="600dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
-
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="75dp"
-            android:layout_marginRight="50dp"
-            android:backgroundTint="@color/yellow"
-            android:text="Regresar"
-            android:onClick="btn_regresar"/>
-    </LinearLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

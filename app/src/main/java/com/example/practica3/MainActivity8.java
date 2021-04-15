@@ -6,22 +6,19 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity4 extends AppCompatActivity {
-
+public class MainActivity8 extends AppCompatActivity {
     ImageView imagen;
     TextView descripcion;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.activity_main8);
 
         imagen = findViewById(R.id.alimento);
         descripcion = findViewById(R.id.descripcion_alimento);
 
-        if (getIntent().hasExtra("comida1")){
+        if (getIntent().hasExtra("comida")){
             imagen.setImageResource(R.drawable.comida1);
             descripcion.setText("Esto es comida, no bebida");
         }
@@ -29,7 +26,5 @@ public class MainActivity4 extends AppCompatActivity {
             imagen.setImageResource(R.drawable.foto1);
             descripcion.setText("Esto es bebida, no comida");
         }
-
-
     }
 }

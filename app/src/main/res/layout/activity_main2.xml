@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="125dp"
-            android:text=""
+            android:text="Platillo"
             android:textSize="40sp" />
 
         <TextView
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text=""
+            android:text="@string/descripcion_plato"
             android:textAlignment="center"
             android:textSize="35sp" />
 
