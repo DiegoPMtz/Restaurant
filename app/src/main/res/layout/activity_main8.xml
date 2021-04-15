@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/orange"
     tools:context=".MainActivity8">
 
     <LinearLayout
@@ -39,14 +40,16 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="45dp"
                 android:text="Regresar"
-                android:backgroundTint="@color/yellow"/>
+                android:backgroundTint="@color/yellow"
+                android:onClick="btn_regresar"/>
 
             <Button
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:text="Salir"
-                android:backgroundTint="@color/yellow"/>
+                android:backgroundTint="@color/yellow"
+                android:onClick="btn_salir"/>
         </LinearLayout>
 
 

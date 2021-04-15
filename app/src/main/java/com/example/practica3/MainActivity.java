@@ -19,13 +19,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void btn_platillo(View v){
         Intent plato = new Intent(MainActivity.this,MainActivity2.class);
-        plato.putExtra("plato",true);
         startActivity(plato);
     }
 
     public void btn_bebida(View v){
-        Intent bebida = new Intent(MainActivity.this,MainActivity2.class);
-        bebida.putExtra("bebida",true);
+        Intent bebida = new Intent(MainActivity.this,MainActivity3.class);
         startActivity(bebida);
     }
 

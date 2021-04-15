@@ -9,13 +9,6 @@ import android.widget.ImageView;
 
 public class MainActivity3 extends AppCompatActivity {
 
-    ImageView img1;
-    ImageView img2;
-    ImageView img3;
-    ImageView img4;
-
-    Boolean platillo;
-    Boolean bebida;
 
 
     @Override
@@ -23,21 +16,6 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        platillo = getIntent().getBooleanExtra("platillo",true);
-        bebida = getIntent().getBooleanExtra("bebidas",true);
-
-        img1 = findViewById(R.id.imagen1);
-        img2 = findViewById(R.id.imagen2);
-        img3 = findViewById(R.id.imagen3);
-        img4 = findViewById(R.id.imagen4);
-
-        if (getIntent().hasExtra("platillo")){
-            img1.setImageResource(R.drawable.comida1);
-            img2.setImageResource(R.drawable.comida2);
-            img3.setImageResource(R.drawable.comida3);
-            img4.setImageResource(R.drawable.comida4);
-
-        }
     }
 
     public void btn_regresar(View v){
@@ -45,15 +23,9 @@ public class MainActivity3 extends AppCompatActivity {
         startActivity(regresar);
     }
 
-    public void btn_alimento1(View v){
-        Intent ejemplo = new Intent(this,MainActivity4.class);
-        if (platillo){
-            ejemplo.putExtra("comida1",true);
-        }
-        if (bebida){
-            ejemplo.putExtra("bebida1",true);
-        }
-        startActivity(ejemplo);
+    public void btn_ver(View v){
+        Intent ejemplos = new Intent(MainActivity3.this,MainActivity5.class);
+        startActivity(ejemplos);
     }
 
 

@@ -2,28 +2,30 @@ package com.example.practica3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity9 extends AppCompatActivity {
-    ImageView imagen;
-    TextView descripcion;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main9);
 
-        imagen = findViewById(R.id.alimento);
-        descripcion = findViewById(R.id.descripcion_alimento);
+    }
 
-        if (getIntent().hasExtra("comida1")){
-            imagen.setImageResource(R.drawable.comida1);
-            descripcion.setText("Esto es comida, no bebida");
-        }
-        if (getIntent().hasExtra("bebida1")){
-            imagen.setImageResource(R.drawable.foto1);
-            descripcion.setText("Esto es bebida, no comida");
-        }
+    public void btn_regresar(View v){
+        Intent regresar = new Intent(this,MainActivity4.class);
+        startActivity(regresar);
+    }
+
+    public void btn_salir(View v){
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }
