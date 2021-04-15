@@ -16,19 +16,22 @@
         tools:layout_editor_absoluteY="91dp">
 
         <TextView
+            android:id="@+id/titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="125dp"
-            android:text="Platillos"
+            android:text=""
             android:textSize="40sp" />
 
         <TextView
+            android:id="@+id/descripcion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="Contamos con una extensa variedad de platillos altamente mexicanos destinados a satisfacer todo tu paladar gastronomico"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35sp" />
+
 
         <LinearLayout
             android:layout_width="wrap_content"

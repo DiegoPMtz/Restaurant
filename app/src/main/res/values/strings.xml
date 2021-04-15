@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Practica 3</string>
+    <string name="descripcion_plato">Contamos con una extensa variedad de platillos altamente mexicanos destinados a satisfacer todo tu paladar gastronomico</string>
+    <string name="descripcion_bebida">Ofrecemos las mejores bebidas refrescantes para cualquier tipo de persona y en cualquier clima</string>
 </resources>

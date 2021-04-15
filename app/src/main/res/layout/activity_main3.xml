@@ -16,22 +16,22 @@
         tools:layout_editor_absoluteX="78dp"
         tools:layout_editor_absoluteY="99dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="150dp"
-            android:text="Imagen1"
-            android:textSize="25sp" />
+        <ImageView
+            android:id="@+id/imagen1"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/foto1"
+            />
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="150dp"
-            android:text="Imagen2"
-            android:textSize="25sp" />
+        <ImageView
+            android:id="@+id/imagen2"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/foto2"
+            />
 
     </LinearLayout>
 
@@ -44,22 +44,20 @@
         tools:layout_editor_absoluteX="78dp"
         tools:layout_editor_absoluteY="99dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:layout_marginLeft="70dp"
-            android:text="Imagen1"
-            android:textSize="25sp"
+        <ImageView
+            android:id="@+id/imagen3"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/foto3"
             />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:layout_marginLeft="50dp"
-            android:text="Imagen2"
-            android:textSize="25sp"
+        <ImageView
+            android:id="@+id/imagen4"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/foto4"
             />
 
     </LinearLayout>
@@ -74,16 +72,16 @@
         app:layout_constraintTop_toTopOf="@+id/linearLayout2">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
             android:backgroundTint="@color/yellow"
             android:text="Ver" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="60dp"
             android:backgroundTint="@color/yellow"
             android:text="Ver" />
     </LinearLayout>
@@ -97,16 +95,16 @@
         app:layout_constraintTop_toTopOf="@+id/linearLayout2">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
             android:backgroundTint="@color/yellow"
             android:text="Ver" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="60dp"
             android:backgroundTint="@color/yellow"
             android:text="Ver" />
     </LinearLayout>
