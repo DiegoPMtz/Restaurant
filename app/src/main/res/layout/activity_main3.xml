@@ -76,7 +76,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
             android:backgroundTint="@color/yellow"
-            android:text="Ver" />
+            android:text="Ver"
+            android:onClick="btn_alimento1"/>
 
         <Button
             android:layout_width="80dp"

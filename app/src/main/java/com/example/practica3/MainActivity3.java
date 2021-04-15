@@ -2,6 +2,7 @@ package com.example.practica3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -13,11 +14,17 @@ public class MainActivity3 extends AppCompatActivity {
     ImageView img3;
     ImageView img4;
 
+    Boolean platillo;
+    Boolean bebida;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+
+        platillo = getIntent().getBooleanExtra("platillo",true);
+        bebida = getIntent().getBooleanExtra("bebidas",true);
 
         img1 = findViewById(R.id.imagen1);
         img2 = findViewById(R.id.imagen2);
@@ -34,7 +41,19 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
     public void btn_regresar(View v){
-        finish();
+        Intent regresar = new Intent(this,MainActivity.class);
+        startActivity(regresar);
+    }
+
+    public void btn_alimento1(View v){
+        Intent ejemplo = new Intent(this,MainActivity4.class);
+        if (platillo){
+            ejemplo.putExtra("comida1",true);
+        }
+        if (bebida){
+            ejemplo.putExtra("bebida1",true);
+        }
+        startActivity(ejemplo);
     }
 
 
